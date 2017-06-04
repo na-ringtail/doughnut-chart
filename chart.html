@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="js/fusioncharts.js"></script>
+    <script type="text/javascript" src="js/fusioncharts.charts.js"></script>
+    <script type="text/javascript" src="js/themes/fusioncharts.theme.fint.js"></script>
+</head>
+<body>
+<div id="chartContainer">FusionCharts XT will load here!</div>
+<script type="text/javascript">
+    FusionCharts.ready(function(){
+        var revenueChart = new FusionCharts({
+            "type": "doughnut2d",
+            "renderAt": "chartContainer",
+            "width": "1120",
+            "height": "768",
+            "dataFormat": "json",
+            "dataSource":  {
+                "chart": {
+                    "caption": "OUR WORKFLOW",
+                    "subCaption": "",
+                    "numberPrefix": "$",
+                    "showBorder": "0",
+                    "use3DLighting": "0",
+                    "enableSmartLabels": "0",
+                    "startingAngle": "90",
+                    "showLabels": "0",
+                    "showPercentValues": "1",
+                    "showLegend": "0",
+                    "defaultCenterLabel": "IT's OUR CARE",
+                    "centerLabel": "$label",
+                    "centerLabelBold": "0",
+                    "showTooltip": "0",
+                    "decimals": "0",
+                    "useDataPlotColorForLabels": "1",
+                    "theme": "fint",
+                    "centerLabelFontSize": 24,
+                    "valueFontSize": 30,
+                    "valueFontBold" : 1,
+                    "valueBorderRadius": "5",
+                    "valueBorderColor": "#cccccc",
+                    "valueBorderThickness": "1",
+                    "valueBorderAlpha": 100,
+                    "pieRadius":200,
+                    "doughnutRadius": 150,
+                    "logoURL": "img.png",
+                    "logoPosition": "CC",
+                    "logoAlpha": 4,
+                    "logoTopMargin": 20
+                },
+                "data": [
+                    {
+                        "label": "В действительности равные капиталы в равное время производят в среднем равную прибыль",
+                        "value": "10",
+                        "displayValue": "Всегда готовы<br/> позаботиться о вас"
+                    },
+                    {
+                        "label": "Это разделение даёт ключ для решения многих экономических проблем",
+                        "value": "10",
+                        "displayValue": "Убедимся что вы<br/> довольны<br/> результатом"
+                    },
+                    {
+                        "label": "Труд — это процесс, деятельность, при которой создаётся стоимость",
+                        "value": "10",
+                        "displayValue": "Выполним для вас<br/> свою работу"
+                    },
+                    {
+                        "label": "Не труд покупается и продаётся как товар, а специфический товар — рабочая сила",
+                        "value": "10",
+                        "displayValue": "Выработаем с вами<br/> условия сотрудничества"
+                    },
+                    {
+                        "label": "Одно из противоречий, которое привело к гибели школу Рикардо: невозможность согласовать обмен",
+                        "value": "10",
+                        "displayValue": "Предложим вам<br/> решение"
+                    },
+                    {
+                        "label": "Живой труд при обмене на часть<br/>  капитала (в форме зарплаты)<br/>  имеет меньшую стоимость",
+                        "value": "10",
+                        "displayValue": "Выслушаем вас<br/> и поймем"
+                    }
+                ]
+            }
+        });
+        revenueChart.render();
+    })
+</script>
+</body>
+</html>
